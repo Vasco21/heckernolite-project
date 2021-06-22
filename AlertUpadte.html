@@ -7,14 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/alert.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script type="text/x-template" class="reportsTemplate">
+        {{#each report}}
+        <!-- <button id="{{@index}}" type="submit"> -->
+            <!-- <span>{{age}}</span>
+            <span>{{contacDetails}}</span>
+            <span>
+            <img src="{{image}}"></span>
+            <span>{{gender}}</span>
+            <span>{{gender}}</span>
+            <span>{{lastSeen}}</span>
+            <span>{{location}}</span>
+            <span>{{name}}</span>
+            <span>{{surname}}</span> -->
+                <table cellpadding="70px">
+                    <tr>
+                    <td colspan="2">Uploaded Image:</td><td colspan="2"><img src="{{image}}"></td>
+                    </tr>
+                    <tr>
+                    <td colspan="2">Name:</td><td colspan="2">{{name}}</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2">Surname:</td><td colspan="2">{{surname}}</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2">Location:</td><td colspan="2">{{location}}</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2">Gender:</td><td colspan="2">{{gender}}</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2">Age:</td><td colspan="2">{{age}}</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2">Id Number:</td><td colspan="2">{{idNumber}}</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2">Last Seen:</td><td colspan="2">{{lastSeen}}</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2">Contact Details:</td><td colspan="2" >{{contacDetails}}</td>
+                    </tr>
+                </table>   
+        <!-- </button> -->
+        {{/each}}
+    </script>
     <title>Find Your Relative</title>
 </head>
 
 <body>
     <h1>alert missing person</h1>
     <!-- missing person list -->
-    <div class="listOfMissing">
+    <!-- <div class="listOfMissing">
         <div class="person-1">
 
             <img src="./img/pic 1.jpg">
@@ -39,7 +84,13 @@
 
             </p>
         </div>
-    </div>
+    </div> -->
+
+    <fieldset>
+        <div id="templateDisplay">
+
+        </div>
+    </fieldset>
     <!-- end of list -->
     <!-- if person is found -->
 
@@ -56,22 +107,24 @@
         <input type="text" id="lname" name="lname" value=""><br>
         <br> <label for="contact">contact:</label>
         <input type="text" id="contact" name="contact" value="">
-        
+
     </div>
-    
+
     <p>description :</p>
     <p>*describe where you saw the person,what they where wearing. include your contact detail</p>
-        <textarea id="description" name="description" rows="4" cols="50">
+    <textarea id="description" name="description" rows="4" cols="50">
 
         </textarea>
-        <div><button type="button">submit report</button>
-        </div>
-        
+    <div><button type="button">submit report</button>
+    </div>
+
     </div>
     <!-- end of person found -->
 
 
 
 </body>
+<!-- javascript -->
+<script src="app.js"></script>
 
 </html>

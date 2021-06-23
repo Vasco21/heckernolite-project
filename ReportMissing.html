@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./../css/report.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script>
+    // function myFunction() {
+    //   var x = document.getElementById("myFile");
+    //   x.disabled = true;
+    //   <button onclick="myFunction()"></button>
+    // }
+  </script>
+</head>
+
+
+<body>
+
+  <div class="container">
+    <div class="row">
+    
+      
+      <div class="column">
+      <div class="form">
+        <h3>Report A Missing Person</h3>
+        <table cellpadding="70px">
+          <tr>
+            <td colspan="2">Upload Image:</td><td colspan="2"><input type="file" id="upload" onchange="selectFile(this.value)" ></td>
+          </tr>
+          <tr>
+            <td colspan="2">Name:</td><td colspan="2"> <input type="text" id="fname"></td>
+          </tr>
+          <tr>
+            <td colspan="2">Surname:</td><td colspan="2"><input type="text" id="sname"></td>
+          </tr>
+          <tr>
+            <td colspan="2">Location:</td><td colspan="2"><input type="text" id="loc"></td>
+          </tr>
+          <tr>
+            <td colspan="2">Gender:</td><td colspan="2"><input type="text" id="gender"></td>
+          </tr>
+          <tr>
+            <td colspan="2">Age:</td><td colspan="2"><input type="number" id="age"></td>
+          </tr>
+          <tr>
+            <td colspan="2">Id Number:</td><td colspan="2"><input type="number" id="idNumber" pattern=""></td>
+          </tr>
+          <tr>
+            <td colspan="2">Last Seen:</td><td colspan="2"><input type="date" id="lseen"></td>
+          </tr>
+          <tr>
+            <td colspan="2">Contact Details:</td><td colspan="2" ><textarea style="margin: 0px; width: 328px; height: 109px;" rows="5" cols="64" id="contacDetails"></textarea></td>
+          </tr>
+        </table> 
+    
+        <input type="submit" value="submit" id="submit">
+      </div>
+    </div>
+      <div class="column">
+      <div class="text">
+        <h3>To report a child or adult missing please fill in the form</h3>
+        <p>Once your form is submited you will receive a case number</p>
+
+
+        <p>For more info you can contact us at:
+        findyourrelative@heckerno.org.za<br>
+        WhatsApp Number: 076 675 5463</p>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  <!-- "(?<Year>[0-9][0-9])(?<Month>([0][1-9])|([1][0-2]))(?<Day>([0-2][0-9])|([3][0-1]))(?<Gender>[0-9])(?<Series>[0-9]{3})(?<Citizenship>[0-1])(?<Uniform>[0-9])(?<Control>[0-9])" -->
+</body>
+  <!-- javascript -->
+  <script src="./javaScript/report.js"></script>
+
+</html>

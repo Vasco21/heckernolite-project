@@ -1,4 +1,4 @@
-var xValues = ["Missing", "Found", "Looking" ]
+var xValues = ["Missing", "Found", "searching" ]
 var yValues = [55, 49, 44];
 var barColors = [
   "red",

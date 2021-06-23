@@ -10,7 +10,6 @@ const lseen = document.querySelector("#lseen");
 const contacDetails = document.querySelector("#contacDetails");
 const submit = document.querySelector("#submit");
 var input = document.getElementById("upload");
-const myPopup = document.querySelector("PopupNum")
 var reportsList = [];
 
 var REPORTS_KEY = "REPORTS";
@@ -60,10 +59,5 @@ var getLocalStorageObject = function(key) {
       return null;
   }
   return JSON.parse(temp);
-}
-function myFunction() {
-  var
-  var popup = document.getElementById("PopupNum");
-  
 }
 

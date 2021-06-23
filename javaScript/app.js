@@ -8,6 +8,8 @@ const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
 
 
+
+URL.createObjectURL
 navToggle.addEventListener("click", function () {
 //   console.log(links.classList);
 //   console.log(links.classList.contains("random"));

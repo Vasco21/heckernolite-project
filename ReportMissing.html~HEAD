@@ -37,19 +37,19 @@
             <td colspan="2">Location:</td><td colspan="2"><input type="text" id="loc"></td>
           </tr>
           <tr>
-            <td colspan="2">Gender:</td><td colspan="2"><input type="text" id="gender"></td>
+            <td colspan="2">Gender:</td><td colspan="2"> <input type="text" id="gender"></td>
           </tr>
           <tr>
-            <td colspan="2">Age:</td><td colspan="2"><input type="number" id="age"></td>
+            <td colspan="2">Age:</td><td colspan="2"><input type="text" id="age"></td>
           </tr>
           <tr>
-            <td colspan="2">Id Number:</td><td colspan="2"><input type="number" id="idNumber" pattern=""></td>
+            <td colspan="2">Id Number:</td><td colspan="2"><input type="text" id="idNumber" pattern=""></td>
           </tr>
           <tr>
             <td colspan="2">Last Seen:</td><td colspan="2"><input type="date" id="lseen"></td>
           </tr>
           <tr>
-            <td colspan="2">Contact Details:</td><td colspan="2" ><textarea style="margin: 0px; width: 328px; height: 109px;" rows="5" cols="64" id="contacDetails"></textarea></td>
+            <td colspan="2">Contact Details:</td><td colspan="2" ><input type="text" id="contacDetails"></td>
           </tr>
         </table> 
     
@@ -73,6 +73,6 @@
   <!-- "(?<Year>[0-9][0-9])(?<Month>([0][1-9])|([1][0-2]))(?<Day>([0-2][0-9])|([3][0-1]))(?<Gender>[0-9])(?<Series>[0-9]{3})(?<Citizenship>[0-1])(?<Uniform>[0-9])(?<Control>[0-9])" -->
 </body>
   <!-- javascript -->
-  <script src="report.js"></script>
+  <script src="./javaScript/report.js"></script>
 
 </html>

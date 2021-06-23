@@ -6,5 +6,27 @@ element.style {
     max-width: 600px;
     display:initial !important;
 }
-
+.box {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+  }
+  
+  .one {
+    background-color: red;
+  }
+  
+  .two {
+    background-color: green;
+  }
+  
+  .three {
+    background-color: blue;
+  }
+  #descriptn{
+  
+  margin-left: 25px
+  }
+  
 

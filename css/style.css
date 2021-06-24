@@ -68,10 +68,21 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
+  /* background: var(--clr-grey-10); */
+  background-image: url("../img/pic3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+}
+.quotes p{
+  text-align: center;
+  margin: 50px;
+  font-size: large;
+  color: #222;
+
+
 }
 ul {
   list-style-type: none;

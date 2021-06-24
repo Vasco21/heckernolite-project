@@ -27,6 +27,7 @@ new Chart("myChart", {
   }
 });
 
+
 var xArray = [100,200,300,400,500,600,700,800,900,1000];
 
 new Chart("myChartOne", {
@@ -34,7 +35,7 @@ new Chart("myChartOne", {
   data: {
     labels: xArray,
     datasets: [{ 
-      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      data: dataList() ,
       borderColor: "red",
       fill: false
     }, { 

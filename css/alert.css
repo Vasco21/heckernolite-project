@@ -1,5 +1,5 @@
 *{
- /* display: grid;  */
+
  text-align: center;
 
 }
@@ -11,6 +11,9 @@
 }
 .inputNames{
     padding-bottom:30px ;
+}
+#templateDisplay{
+    display: list-item;
 }
 
 

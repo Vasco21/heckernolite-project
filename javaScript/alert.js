@@ -27,10 +27,5 @@ for(let i = 0 ; i < reportsList.length; i++) {
 }
 
 if(reportsList) {
-  // for(let i = 0 ; i < reportsList.length; i++) {
-  //   reportsList[i].image = URL.createObjectURL(reportsList[i].image);
-  //   modifiedReportsList.push(reportsList)
-  // }
-  
   document.querySelector("#templateDisplay").innerHTML = templateCompiler({report : reportsList})
 }

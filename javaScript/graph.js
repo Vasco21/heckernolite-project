@@ -1,49 +1,83 @@
-var xValues = ["Missing", "Found", "searching" ]
-var yValues = [55, 49, 44];
-var barColors = [
-  "red",
-  "blue",
-  "yellow"
-];
+// var xValues = ["Missing", "spotted" ]
+// var yValues = [55, 49, 44];
+// var barColors = [
+//   "red",
+//   "blue",
+//    "yellow"
+//  ];
 
-new Chart("myChart", {
-  type: "bar",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero: true
-        }
-      }],
-    }
+// new Chart("myChart", {
+//   type: "bar",
+//   data: {
+//     labels: xValues,
+//     datasets: [{
+//       backgroundColor: barColors,
+//       data: yValues
+//     }]
+//   },
+//   options: {
+//     legend: {display: false},
+//     scales: {
+//       yAxes: [{
+//         ticks: {
+//           beginAtZero: true
+//         }
+//       }],
+//     }
+//   }
+// });
+
+  var data;
+// alert(data)
+if(localStorage['REPORTS']){
+data = JSON.parse(localStorage['REPORTS'])
+}
+
+// alert(typeof data)
+
+ var xArray  = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+// data.foreach((elem) =>{
+//   alert("dsdsds"+elem)
+
+// })
+var mapForGraph = {}
+
+for(var i=0; i<data.length; i++){
+  // console.log(data[i].lastSeen)
+  console.log((data[i].lastSeen))
+  if(!mapForGraph[data[i].lastSeen]){
+    mapForGraph[data[i].lastSeen] = 0
+
   }
-});
+  mapForGraph[data[i].lastSeen]++
+// if(data[i].lastSeen){
+// mapForGraph = data[i].lastSeen
+
+}
+ console.log(mapForGraph)
+
+// console.log(Object.values(mapForGraph))
+var mapObj = {
+  xArray : Object.keys(mapForGraph),
+  yArray : Object.values(mapForGraph)
+}
+// mapForGraph[i].lastSeen++
 
 
-var xArray = [100,200,300,400,500,600,700,800,900,1000];
+
+
 
 new Chart("myChartOne", {
   type: "line",
   data: {
-    labels: xArray,
+    labels: mapObj.xArray,
     datasets: [{ 
-      data: dataList() ,
+      data:data.length ,
       borderColor: "red",
       fill: false
-    }, { 
-      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
-      borderColor: "green",
-      fill: false
-    }, { 
-      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+    },
+    { 
+      data: [2, 4, 5, 10],
       borderColor: "blue",
       fill: false
     }]

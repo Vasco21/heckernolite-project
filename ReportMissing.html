@@ -40,7 +40,15 @@
             <td colspan="2">Location:</td><td colspan="2"><input type="text" id="loc"></td>
           </tr>
           <tr>
-            <td colspan="2">Gender:</td><td colspan="2"><input type="text" id="gender"></td>
+            <td colspan="2">Gender:</td>
+            <td >
+              <select name="choose" id="gender">
+              <option value="select">Select gender</option>
+              <option value="Female">Female</option>
+              <option value="Male">male</option>
+              <option value="non-binary">non-binary</option>
+              </select> 
+          </td>
           </tr>
           <tr>
             <td colspan="2">Age:</td><td colspan="2"><input type="number" id="age"></td>
@@ -51,10 +59,22 @@
           <tr>
             <td colspan="2">Last Seen:</td><td colspan="2"><input type="date" id="lseen"></td>
           </tr>
+       
+        
+      
           <tr>
-            <td colspan="2">Contact Details:</td><td colspan="2" ><textarea style="margin: 0px; width: 328px; height: 109px;" rows="5" cols="64" id="contacDetails"></textarea></td>
-          </tr>
-        </table> 
+            <td colspan="2">contact Details:</td><td colspan="2"><input type="text" placeholder="eg family contact*" id="contacDetails"></td>
+        </tr>  
+        <tr>
+          <td colspan="2">Email Address:</td><td colspan="2"><input type="text" id="Email"></td>
+      </tr> 
+
+
+        <tr>
+          <td colspan="2">clothing:</td><td colspan="2"><input type="text" value = ""class="clothing"></td>
+          <!-- <td colspan="2">last clothing worn Description:</td><td colspan="2" ><input type="text" class="cloths" style="margin: 0px; width: 328px; height: 109px;" rows="5" value= "" cols="64" id="cloth"></td> -->
+        </tr>
+      </table> 
     
         <input type="submit" value="submit" id="submit">
       </div>

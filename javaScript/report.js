@@ -8,8 +8,14 @@ const age = document.querySelector("#age");
 const idNumber = document.querySelector("#idNumber");
 const lseen = document.querySelector("#lseen");
 const contacDetails = document.querySelector("#contacDetails");
+const Email = document.querySelector("#Email")
 const submit = document.querySelector("#submit");
 var input = document.getElementById("upload");
+// const clothElem = document.querySelector(".cloths");
+const clothElem = document.querySelector(".clothing")
+
+//  console.log(clothElem.value)
+// alert(clothElem.value)
 var reportsList = [];
 
 var REPORTS_KEY = "REPORTS";
@@ -23,13 +29,23 @@ var reportObsj = {
   age: Number,
   contacDetails: String,
   lastSeen: Date,
-  idNumber: Number
+  idNumber: Number,
+  Email: String,
+  clothing: String,
+  
 
 }
 
 submit.addEventListener("click", function () {
+  var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+  // alert(months[new Date(lseen.value).getMonth()]);
+
+
+  console.log(months[new Date(lseen.value).getMonth()])
+
   reportObsj.image = upload.value;
-  reportObsj.lastSeen =  Date.parse(lseen.value);
+  reportObsj.lastSeen = months[new Date(lseen.value).getMonth()];
   reportObsj.name = fname.value;
   reportObsj.surname = sname.value;
   reportObsj.location = loc.value;
@@ -37,6 +53,13 @@ submit.addEventListener("click", function () {
   reportObsj.age = age.value;
   reportObsj.idNumber = idNumber.value;
   reportObsj.contacDetails = contacDetails.value;
+  reportObsj.Email = Email.value;
+  reportObsj.clothing = clothElem.value;
+ 
+  
+
+
+  
   reportsList = getLocalStorageObject(REPORTS_KEY);
   if(reportsList) {
     reportsList.push(reportObsj);

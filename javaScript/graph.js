@@ -73,12 +73,12 @@ new Chart("myChartOne", {
     labels: mapObj.xArray,
     datasets: [{ 
       data:data.length ,
-      borderColor: "red",
+      borderColor: "blue",
       fill: false
     },
     { 
       data: [2, 4, 5, 10],
-      borderColor: "blue",
+      borderColor: "red",
       fill: false
     }]
   },

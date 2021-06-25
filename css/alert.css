@@ -5,6 +5,10 @@
 
 
 }
+body{
+    background-color: gray;
+    padding: 20px;
+}
 .person-1{
     display:flex
 }
@@ -14,10 +18,22 @@
 .inputNames{
     padding-bottom:30px ;
 }
-#templateDisplay{
+/* #templateDisplay{
     display: list-item;
     
+} */
+#templateDisplay{
+    display: flex;
+    background-color: gray;
 }
+#submit{
+    border-radius: 6px;
+    background-color:skyblue;
+    
+}
+.table{
+    border: 10px;
 
+}
 
     

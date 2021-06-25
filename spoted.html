@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/spoted.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script type="text/x-template" class="FoundTemplate">
+        {{#each report}}
+                <table cellpadding="70px">
+                    <tr>
+                    <td colspan="2">Name:</td><td colspan="2">{{name}}</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2">Surname:</td><td colspan="2">{{surname}}</td>
+                    </tr>
+                    <tr>
+                    <td colspan="2">Contact:</td><td colspan="2">{{contact}}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">description:</td><td colspan="2">{{description}}</td>
+                    </tr> 
+                </table>   
+        {{/each}}
+    </script>
+    <title>Find Your Relative</title>
+</head>
+
+<body>
+    <h1>people reported seen</h1>
+    <fieldset>
+        <div id="templateDisplay">
+
+        </div>
+    </fieldset>
+
+    <div class="info">
+        <h3>Emergency Numbers and Contacts</h3>
+        <div class="slider-container">
+            <div class="slide">
+              <img src="./img/img-1.jpeg" class="slide-img" alt="" />
+            
+            </div>
+            <div class="slide">
+                <img src="./img/contacts.jpg" class="slide-img" alt="" style="width:1000px"/>
+              
+            </div>
+            <div class="slide">
+                
+            
+            </div>
+            <div class="slide">
+              <div>
+                <img src="./img/911.jpg" class="person-img" alt="" />    
+              </div>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button type="button" class="prevBtn">
+              prev
+            </button>
+            <button type="button" class="nextBtn">
+              next
+            </button>
+          </div>
+          <div class="p">
+              <p></p>
+          </div>
+
+          
+
+    </div>
+
+    
+    <!-- end of person found -->
+
+
+
+</body>
+<!-- javascript -->
+<script src="./javaScript/spoted.js"></script>
+
+</html>
